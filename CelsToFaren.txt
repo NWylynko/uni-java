@@ -1,0 +1,9 @@
+
+BEGIN CelsToFaren
+  MAIN:
+    cels <- ASK USER WITH PROMPT "Please enter the Celcius: "
+    multiplier <- 9 / 5
+    faren <- multiplier * cels + 32
+    PRINT cels "º celcius is " farn "º fahrenheit"
+  END MAIN
+END

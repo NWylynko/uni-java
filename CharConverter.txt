@@ -1,0 +1,7 @@
+BEGIN CharConverter
+  MAIN:
+    char <- ASK USER WITH PROMPT FOR CHAR "Please enter the character: "
+    charAsInt <- char AS INT
+    PRINT "The character " char " is " charAsInt " in ASCII"
+  END MAIN
+END
