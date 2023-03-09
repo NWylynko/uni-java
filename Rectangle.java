@@ -4,16 +4,16 @@ public class Rectangle {
 
   public static void main(String[] args) {
 
-    var option = 1;
+    var option = "user";
 
-    if (option == 1) {
-      Option1();
-    } else if (option == 2) {
-      Option2(args);
+    if (option == "user") {
+      UserInputRectangle();
+    } else if (option == "cli") {
+      CliInputRectangle(args);
     }
   }
 
-  public static void Option1() {
+  public static void UserInputRectangle() {
     Scanner scan = new Scanner(System.in);
     System.out.println("What is number 1: ");
     var num1 = scan.nextInt();
@@ -25,7 +25,7 @@ public class Rectangle {
     System.out.println("calc: " + num1 + " * " + num2 + " = " + calc);
   }
 
-  public static void Option2(String[] args) {
+  public static void CliInputRectangle(String[] args) {
     var num1 = Integer.parseInt(args[0]);
     var num2 = Integer.parseInt(args[1]);
     var calc = num1 * num2;
