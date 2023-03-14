@@ -1,0 +1,6 @@
+BEGIN Train
+  MAIN:
+    train_wheel_radius <- 300
+    
+  END MAIN
+END
